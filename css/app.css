@@ -1,0 +1,42 @@
+body{
+  background-color: #f6f6f6;
+}
+.navegacao{
+  margin-top: 20px;
+}
+.icon-bar{
+  background: #303030;
+}
+.lista1 li{
+  list-style: none;
+  padding: 5px;
+}
+.header{
+  background-color: #303030;
+}
+.empresa{
+  font-size: 36px;
+  font-weight: bold;
+  color: #d0ba42;
+  margin-bottom: 0px;
+}
+.empresa2{
+  font-size: 15px;
+  font-weight: bolder;
+  color:#fff
+}
+
+.rodape{
+  background-color: #303030;
+  color: #fff;
+}
+.foto{
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px #888888;
+}
+.logo{
+  margin: 0px;
+}
+.fi-telephone{
+  font-size: 36px;
+}

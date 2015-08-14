@@ -7,6 +7,10 @@ body{
 .icon-bar{
   background: #303030;
 }
+.barra{
+  background-image: url(../img/borda.png);
+  height: 40px;
+}
 .lista1 li{
   list-style: none;
   padding: 5px;

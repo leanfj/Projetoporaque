@@ -21,8 +21,8 @@
             <h1><img src="img/logo.png" alt="logo Poraquê"/></h1>
           </div>
           <div class="large-9 columns">
-            <p class="empresa">PORAQUÊ</p>
-            <p class="empresa2">Instalações Elétricas e Telefônicas LTDA</p>
+            <h1><p class="empresa">PORAQUÊ</p></h1>
+            <h2><p class="empresa2">Instalações Elétricas e Telefônicas LTDA</p></h2>
           </div>
         </div>
         <div class="large-6 columns navegacao">
@@ -65,29 +65,29 @@
             <br>
                 <p><strong>Entre em contato conosco e solicite um orçamento sem compromisso!</strong></p>
 
-                <form data-abide>
+                <form data-abide id="form1" name="form1" method="post" action="enviarEmail.php">
                   <div class="name-field">
                     <label>
-                      <input type="text" placeholder="Seu Nome" required pattern="[a-zA-Z]+" >
+                      <input type="text" name="nome" id="nome" placeholder="Seu Nome" required pattern="[a-zA-Z]+" >
                     </label>
                     <small class="error">Nome é obrigatório</small>
                   </div>
                   <div class="email-field">
                     <label>
-                      <input type="email" placeholder="Seu Email" required>
+                      <input type="email" name="email" id="email" placeholder="Seu Email" required>
                     </label>
                     <small class="error">O email é obrigatório</small>
                   </div>
                   <div>
                       <label>
-                      <input type="tel" name="tel" placeholder="Seu Telefone" required>
+                      <input type="tel" name="tel" id="tel" placeholder="Seu Telefone" required>
                       </label>
                       <small class="error">Telefone é obrigatório</small>
                   </div>
                   <div class="row">
                     <div class="large-12 columns">
                       <label>
-                        <textarea placeholder="Digite aqui sua mensagem" rows="20"></textarea>
+                        <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="20"></textarea>
                       </label>
                     </div>
                   </div>
@@ -102,15 +102,32 @@
                 %A3o%20Jo%C3%A3o%20Berchmarns%20-%20Cordovil%2C%20Rio%20de%20Janeiro
                 %20-%20RJ%2C%20Brasil&key=AIzaSyAx7SZko4hVLaxOvOlnRUQ2h9au0uGoF8c"
                 allowfullscreen></iframe>
-                <ul class="lista1">
-                 <li>Contatos</li>
-                 <li><i class="fi-telephone size-30"></i>(21) 3391-3095</li>
-                 <li><i class="fi-mobile size-30"></i>(21) 96762-2595 – Alberto</li>
-                 <li><img src="css/foundation-icons/svgs/whatsapp.svg">(21) 96762-2595 – Alberto</li>
-                 <li><i class="fi-mail size-30"></i>contato@poraqueintalacoes.com</li>
-                 <li><i class="fi-mail size-30"></i>jalbertojesus@poraqueintalacoes.com</li>
-                </ul>
+
           </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="panel">
+                    <div class="row">
+                    <div class="large-6 columns">
+                        <ul class="lista1">
+                            <li><h4>Contatos</h4></li>
+                            <li><i class="fi-telephone size-30"></i>(21) 3391-3095</li>
+                            <li><i class="fi-mobile size-30"></i>(21) 96762-2595 – Alberto</li>
+                            <li><img src="css/foundation-icons/svgs/whatsapp.svg">(21) 96762-2595 – Alberto</li>
+                        </ul>
+                    </div>
+                    <div class="large-6 columns">
+                        <br>
+                        <br>
+                        <ul class="lista1">
+                            <li><i class="fi-mail size-30"></i>contato@poraqueintalacoes.com</li>
+                            <li><i class="fi-mail size-30"></i>jalbertojesus@poraqueintalacoes.com</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
 <!--Fim Section-->
 
@@ -124,10 +141,10 @@
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">
-                <li><a href="#" class="webicon facebook"></a></li>
-                <li><a href="#" class="webicon googleplus"></a></li>
-                <li><a href="#" class="webicon wordpress"></a></li>
-                <li><a href="#" class="webicon mail"></a></li>
+                <li><a href="index.html" class="webicon facebook"></a></li>
+                <li><a href="index.html" class="webicon googleplus"></a></li>
+                <li><a href="index.html" class="webicon wordpress"></a></li>
+                <li><a href="contato.html" class="webicon mail"></a></li>
               </ul>
             </div>
           </div>

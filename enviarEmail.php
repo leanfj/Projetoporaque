@@ -1,5 +1,5 @@
   <?php
-    $para = "email";
+    $para = "contato@leandrofrontenddev.esy.es";
     $assunto = "Contato pelo Site";
     $nome = $_REQUEST['nome'];
     $email = $_REQUEST['email'];
@@ -20,5 +20,6 @@
 
 
     mail($para, $assunto, $mensagem, $headers);
-    header('location:contato.html');
+
+    header('location:contato.php?msg=true');
   ?>

@@ -64,7 +64,6 @@
           <div class="large-6 columns">
             <br>
                 <p><strong>Entre em contato conosco e solicite um orçamento sem compromisso!</strong></p>
-
                 <form data-abide id="form1" name="form1" method="post" action="enviarEmail.php">
                   <div class="name-field">
                     <label>
@@ -84,14 +83,24 @@
                       </label>
                       <small class="error">Telefone é obrigatório</small>
                   </div>
-                  <div class="row">
-                    <div class="large-12 columns">
-                      <label>
-                        <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="6"></textarea>
-                      </label>
-                    </div>
+                  <div>
+                    <label>
+                      <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="6"></textarea>
+                    </label>
                   </div>
-                  <button type="submit">Enviar</button>
+                  <div class="large-12 columns">
+                    <button type="submit">Enviar</button>
+                    <?php
+                    $msg= $_REQUEST['msg'];
+                    ?>
+                    <?php if($msg == 'true') {?>
+                      <div data-alert class="alert-box alert round">
+                        Formulário enviado.
+                        <a href="#" class="close">&times;</a>
+                      </div>
+                    <?php } else {?>
+                    <?php }?>
+                  </div>
                 </form>
           </div>
           <div class="large-6 columns">
@@ -155,6 +164,7 @@
       <script src="js/foundation/foundation.js"></script>
       <script src="js/foundation/foundation.abide.js"></script>
       <script src="js/foundation/foundation.dropdown.js"></script>
+      <script src="js/foundation/foundation.alert.js"></script>
       <script type="text/javascript">
           $(document).foundation();
       </script>

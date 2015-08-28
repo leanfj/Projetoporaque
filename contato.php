@@ -50,7 +50,7 @@
                   <li><a href="servicos-telefonia.html">Telefonia</a></li>
               </ul>
 
-              <a class="item active" href="contato.html">
+              <a class="item active" href="contato.php">
                 <img src="css/foundation-icons/svgs/fi-mail.svg" >
                 <label>Contato</label>
               </a>
@@ -133,8 +133,10 @@
                         <br>
                         <br>
                         <ul class="lista1">
-                            <li><i class="fi-mail size-30"></i>contato@poraqueintalacoes.com</li>
-                            <li><i class="fi-mail size-30"></i>jalbertojesus@poraqueintalacoes.com</li>
+                            <li><i class="fi-mail size-30"></i>poraque@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>a.silva@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueintalacoes.com.br</li>
                         </ul>
                     </div>
                     </div>

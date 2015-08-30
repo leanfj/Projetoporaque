@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poraquê Instalções Elétricas</title>
+    <title>Poraquê Instalações Elétricas</title>
     <!--META TAGS-->
     <meta name="author" content="Leandro" />
     <meta http-equiv="cache-control"   content="no-store" />

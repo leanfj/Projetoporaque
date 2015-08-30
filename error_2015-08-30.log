@@ -1,0 +1,4 @@
+[Sun Aug 30 13:28:52.251022 2015] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.6 (Red Hat) configured -- resuming normal operations
+[Sun Aug 30 13:28:52.251107 2015] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/httpd'
+[Sun Aug 30 13:31:19.649670 2015] [mpm_prefork:notice] [pid 7] AH00163: Apache/2.4.6 (Red Hat) configured -- resuming normal operations
+[Sun Aug 30 13:31:19.649794 2015] [core:notice] [pid 7] AH00094: Command line: '/usr/sbin/httpd'

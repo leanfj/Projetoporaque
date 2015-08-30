@@ -10,10 +10,10 @@
     <meta http-equiv="pragma" content="no-store" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Poraquê Instalações Eletricas empresa de serviços" />
+    <meta name="description" content="Poraquê Instalações Eletricas empresa prestadora de serviços com sistemas elétricos e telefônicos" />
     <meta name="keywords" content="Elétrica, Telefonia, CFTV, Antena-coletiva, Ar-condicionado, Filtro-capacitivo" />
     <meta name="robots" content="index, follow" />
-    <meta name="rating" content="general" />    
+    <meta name="rating" content="general" />
     <!-- This is how you would link your custom stylesheet -->
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
@@ -38,7 +38,7 @@
               </div>
           </a>
         <div class="large-6 columns navegacao">
-          <div class="icon-bar four-up">
+          <div class="icon-bar five-up">
               <a class="item" href="index.html">
                 <img src="css/foundation-icons/svgs/fi-home.svg" >
                 <label>Home</label>
@@ -59,7 +59,10 @@
                   <li><a href="servicos-filtro-capacitivo.html">Filtro Capacitivo</a></li>
                   <li><a href="servicos-telefonia.html">Telefonia</a></li>
               </ul>
-
+              <a class="item " href="clientes.html">
+                  <img src="css/foundation-icons/svgs/fi-address-book.svg" >
+                  <label>Clientes</label>
+              </a>
               <a class="item active" href="contato.php">
                 <img src="css/foundation-icons/svgs/fi-mail.svg" >
                 <label>Contato</label>
@@ -143,10 +146,10 @@
                         <br>
                         <br>
                         <ul class="lista1">
-                            <li><i class="fi-mail size-30"></i>poraque@poraqueintalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>a.silva@poraqueintalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueintalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>poraque@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>a.silva@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueinstalacoes.com.br</li>
                         </ul>
                     </div>
                     </div>
@@ -161,14 +164,14 @@
           <hr/>
           <div class="row">
             <div class="large-6 columns">
-              <p>Poraquê Instalações Elétricas e Telefônicas LTDA - Todos os direitos reservados © Desenvolvido por Leandro Ferreira 2015</p>
+              <p class="rodape-text">Poraquê Instalações Elétricas e Telefônicas LTDA - Todos os direitos reservados © Desenvolvido por Leandro Ferreira 2015</p>
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">
                 <li><a href="index.html" class="webicon facebook"></a></li>
                 <li><a href="index.html" class="webicon googleplus"></a></li>
                 <li><a href="index.html" class="webicon wordpress"></a></li>
-                <li><a href="contato.html" class="webicon mail"></a></li>
+                <li><a href="contato.php" class="webicon mail"></a></li>
               </ul>
             </div>
           </div>

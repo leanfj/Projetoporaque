@@ -1,6 +1,6 @@
 
   <?php
-    $para = "poraque@poraqueinstalacoes.com.br, a.silva@poraqueintalacoes.com.br, i.cristina@poraqueintalacoes.com.br, j.ricardo@poraqueintalacoes.com.br";
+    $para = "poraque@poraqueinstalacoes.com.br, a.silva@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br";
     $assunto = "Contato pelo Site";
     $nome = $_REQUEST['nome'];
     $email = $_REQUEST['email'];
@@ -13,7 +13,7 @@
       $mensagem .= "<br><strong>Mensagem: </strong>". $msg;
     $headers  = 'MIME-Version: 1.0'."\r\n";
     $headers .= 'Content-Type:text/html; charset=UTF-8'."\n";
-    $headers .= 'From: '.$email . "\r\n" .
+    $headers .= 'From: poraque@poraqueinstalacoes.com.br'."\r\n".
                 'Reply-To: '.$email . "\r\n" .
                 'X-Mailer: PHP/' . phpversion();
     mail($para, $assunto, $mensagem, $headers);

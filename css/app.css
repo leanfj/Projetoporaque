@@ -7,6 +7,18 @@ body{
 .icon-bar{
   background: #303030;
 }
+.icon-bar > a:hover {
+  background: rgba(255,255,255, 0.1); }
+  .icon-bar > a:hover label {
+    color: #FFFFFF; }
+  .icon-bar > a:hover i {
+    color: #FFFFFF; }
+.icon-bar > a.active {
+  background: rgba(255,255,255, 0.1); }
+  .icon-bar > a.active label {
+    color: #FFFFFF; }
+  .icon-bar > a.active i {
+    color: #FFFFFF; }
 .barra{
   background-image: url(../img/borda.png);
   height: 40px;
@@ -34,7 +46,11 @@ body{
     background-color: #303030;
     color: #fff;
 }
+
+.rodape-text{
+    font-size: 13px;
 }
+
 .logo{
     margin: 0px;
 }
@@ -45,4 +61,7 @@ body{
 }
 .conf_envio{
     top: 300px;
+}
+.in-construction{
+    font-size: 30px;
 }

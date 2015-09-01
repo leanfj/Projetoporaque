@@ -1,21 +1,34 @@
+<?php
+@ini_set("display_errors", 1);
+@ini_set("log_errors", 1);
+@ini_set("error_reporting", E_ALL);
+$to = "poraque@poraqueinstalacoes.com.br, a.silva@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br";
+$subject = "Contato pelo Site";
+$nome = $_REQUEST['nome'];
+$email = $_REQUEST['email'];
+$tel = $_REQUEST['tel'];
+$msg = $_REQUEST['mensagem'];
 
-  <?php
-    $para = "poraque@poraqueinstalacoes.com.br, a.silva@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br";
-    $assunto = "Contato pelo Site";
-    $nome = $_REQUEST['nome'];
-    $email = $_REQUEST['email'];
-    $tel = $_REQUEST['tel'];
-    $msg = $_REQUEST['mensagem'];
-      $mensagem = "<strong>Mensagem de Contato</strong><br><br>";
-      $mensagem .= "<br><strong>Nome: </strong>". $nome;
-      $mensagem .= "<br><strong>Email: </strong>". $email;
-      $mensagem .= "<br><strong>Tel: </strong>". $tel;
-      $mensagem .= "<br><strong>Mensagem: </strong>". $msg;
-    $headers  = 'MIME-Version: 1.0'."\r\n";
-    $headers .= 'Content-Type:text/html; charset=UTF-8'."\n";
-    $headers .= 'From: poraque@poraqueinstalacoes.com.br'."\r\n".
-                'Reply-To: '.$email . "\r\n" .
-                'X-Mailer: PHP/' . phpversion();
-    mail($para, $assunto, $mensagem, $headers);
-    header('location:contato.php?msg=true');
-  ?>
+  $message = "Nome: ".$nome."<br/>E-mail: ".$email."<br/>Tel: ".$tel."<br/>Mensagem: ".$msg."";
+
+
+  $headers  = 'MIME-Version: 1.1'."\r\n";
+  $headers .= 'Content-Type:text/html; charset=UTF-8'."\r\n";
+  $headers .= 'From: caixa@poraqueinstalacoes.com.br'."\r\n".
+              'Reply-To: '.$email . "\r\n" .
+              'X-Mailer: PHP/' . phpversion();
+
+              mail ($to, $subject, $message, $headers);
+
+      echo $to."<br>";
+      echo $message."<br>";
+      echo $headers."<br>";
+      echo $subject."<br>";
+
+
+
+      header('Location: http://poraqueinstalacoes.com.br/contato.php?msg=true');
+
+
+
+?>

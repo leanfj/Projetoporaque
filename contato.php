@@ -1,16 +1,16 @@
-﻿<!doctype html>
+<!doctype html>
 <html class="no-js" lang="pt-br">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poraquê Instalações Elétricas</title>
+    <title>Poraquê Instalções Elétricas</title>
     <!--META TAGS-->
     <meta name="author" content="Leandro" />
     <meta http-equiv="cache-control"   content="no-store" />
     <meta http-equiv="pragma" content="no-store" />
     <meta http-equiv="content-language" content="pt-br" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Poraquê Instalações Eletricas empresa prestadora de serviços com sistemas elétricos e telefônicos" />
+    <meta name="description" content="Poraquê Instalações Eletricas empresa de serviços" />
     <meta name="keywords" content="Elétrica, Telefonia, CFTV, Antena-coletiva, Ar-condicionado, Filtro-capacitivo" />
     <meta name="robots" content="index, follow" />
     <meta name="rating" content="general" />
@@ -63,6 +63,7 @@
                   <img src="css/foundation-icons/svgs/fi-address-book.svg" >
                   <label>Clientes</label>
               </a>
+
               <a class="item active" href="contato.php">
                 <img src="css/foundation-icons/svgs/fi-mail.svg" >
                 <label>Contato</label>
@@ -146,10 +147,10 @@
                         <br>
                         <br>
                         <ul class="lista1">
-                            <li><i class="fi-mail size-30"></i>poraque@poraqueinstalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>a.silva@poraqueinstalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueinstalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>poraque@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>a.silva@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueintalacoes.com.br</li>
                         </ul>
                     </div>
                     </div>
@@ -164,7 +165,7 @@
           <hr/>
           <div class="row">
             <div class="large-6 columns">
-              <p class="rodape-text">Poraquê Instalações Elétricas e Telefônicas LTDA - Todos os direitos reservados © Desenvolvido por Leandro Ferreira 2015</p>
+              <p>Poraquê Instalações Elétricas e Telefônicas LTDA - Todos os direitos reservados © Desenvolvido por Leandro Ferreira 2015</p>
             </div>
             <div class="large-6 columns">
               <ul class="inline-list right">

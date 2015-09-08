@@ -84,7 +84,7 @@
                 <form data-abide id="form1" name="form1" method="post" action="enviarEmail.php">
                   <div class="name-field">
                     <label>
-                      <input type="text" name="nome" id="nome" placeholder="Seu Nome" required pattern="[a-zA-Z]+" >
+                      <input type="text" name="nomeRemetente" id="nomeRemetente" placeholder="Seu Nome" required pattern="[a-zA-Z]+" >
                     </label>
                     <small class="error">Nome é obrigatório</small>
                   </div>
@@ -111,11 +111,12 @@
                     $msg= $_REQUEST['msg'];
                     ?>
                     <?php if($msg == 'true') {?>
-                      <div data-alert class="alert-box alert round">
+                      <div data-alert class="alert-box success round">
                         Formulário enviado.
                         <a href="#" class="close">&times;</a>
                       </div>
                     <?php } else {?>
+                      
                     <?php }?>
                   </div>
                 </form>

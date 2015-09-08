@@ -1,34 +1,65 @@
 <?php
-@ini_set("display_errors", 1);
-@ini_set("log_errors", 1);
-@ini_set("error_reporting", E_ALL);
-$to = "poraque@poraqueinstalacoes.com.br, a.silva@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br";
-$subject = "Contato pelo Site";
-$nome = $_REQUEST['nome'];
-$email = $_REQUEST['email'];
-$tel = $_REQUEST['tel'];
-$msg = $_REQUEST['mensagem'];
 
-  $message = "Nome: ".$nome."<br/>E-mail: ".$email."<br/>Tel: ".$tel."<br/>Mensagem: ".$msg."";
+/*apenas dispara o envio da mensagem caso houver/existir $_POST['enviar']*/
+
+/*abaixo as veriaveis principais, que devem conter em seu formulario*/
+$nomeRemetente = $_POST['nomeRemetente'];
+$email = $_POST['email'];
+$tel = $_POST['tel'];
+$msg = $_POST['mensagem'];
+
+/*********************************** A PARTIR DAQUI NAO ALTERAR ************************************/
+
+require 'phpmailer/class.phpmailer.php';
+require 'phpmailer/PHPMailerAutoload.php';
+$mail = new PHPMailer();
+$mail->setLanguage('pt');
+
+$to = 'poraque@poraqueinstalacoes.com.br, a.silva@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br';
+
+$host = 'smtp.poraqueinstalacoes.com.br';
+$username = 'caixa@poraqueinstalacoes.com.br';
+$password = 'honda2014';
+$port = 587;
+$secure = false;
+
+$mail->isSMTP();
+$mail->Host = $host;
+$mail->smtpAuth = true;
+$mail->Username = $username;
+$mail->Password = $password;
+$mail->Port = $port;
+$mail->smtpSecure = $secure;
 
 
-  $headers  = 'MIME-Version: 1.1'."\r\n";
-  $headers .= 'Content-Type:text/html; charset=UTF-8'."\r\n";
-  $headers .= 'From: caixa@poraqueinstalacoes.com.br'."\r\n".
-              'Reply-To: '.$email . "\r\n" .
-              'X-Mailer: PHP/' . phpversion();
-
-              mail ($to, $subject, $message, $headers);
-
-      echo $to."<br>";
-      echo $message."<br>";
-      echo $headers."<br>";
-      echo $subject."<br>";
+$from = $username;
+$fromName = 'Caixa';
 
 
+$mail->From = $from;
+$mail->FromName = $fromName;
+$mail->addReplyTo($email, $nomeRemetente);
 
-      header('Location: http://poraqueinstalacoes.com.br/contato.php?msg=true');
+$mail->addAddress('poraque@poraqueinstalacoes.com.br','Poraque');
+$mail->addAddress('a.silva@poraqueinstalacoes.com.br','Alberto');
+$mail->addAddress('i.cristina@poraqueinstalacoes.com.br','Isabel');
+$mail->addAddress('j.ricardo@poraqueinstalacoes.com.br','Ricardo');
 
+$mail->isHTML(true);
+$mail->CharSet = 'utf-8';
+$mail->WordWrap = 70;
 
+$mail->Subject = 'Contato via site';
+
+$message = "Nome: ".$nomeRemetente."<br/>E-mail: ".$email."<br/>Tel: ".$tel."<br/>Mensagem: ".$msg."";
+$mail->Body = $message;
+
+$enviado = $mail->Send();
+
+if($enviado) {
+  header('Location: http://poraqueinstalacoes.com.br/contato.php?msg=true');
+} else {
+  echo 'Erro:'.$mail->ErrorInfo;
+}
 
 ?>

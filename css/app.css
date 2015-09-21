@@ -23,6 +23,9 @@ body{
   background-image: url(../img/borda.png);
   height: 40px;
 }
+.sub-title{
+  font-size: 1.4375rem;
+}
 .lista1 li{
   list-style: none;
   padding: 10px;

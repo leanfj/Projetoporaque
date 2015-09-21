@@ -124,7 +124,7 @@
           <div class="large-6 columns">
                 <br>
                 <p><strong>Onde Estamos</strong></p>
-                <iframe width="450" height="300" frameborder="0" style="border:0"
+                <iframe width="100%" height="300" frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=Pra%C3%A7a%20S%C3
                 %A3o%20Jo%C3%A3o%20Berchmarns%20-%20Cordovil%2C%20Rio%20de%20Janeiro
                 %20-%20RJ%2C%20Brasil&key=AIzaSyAx7SZko4hVLaxOvOlnRUQ2h9au0uGoF8c"
@@ -148,10 +148,10 @@
                         <br>
                         <br>
                         <ul class="lista1">
-                            <li><i class="fi-mail size-30"></i>poraque@poraqueintalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>a.silva@poraqueintalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueintalacoes.com.br</li>
-                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueintalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>poraque@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>a.silva@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>i.cristina@poraqueinstalacoes.com.br</li>
+                            <li><i class="fi-mail size-30"></i>j.ricardo@poraqueinstalacoes.com.br</li>
                         </ul>
                     </div>
                     </div>

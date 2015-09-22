@@ -124,6 +124,7 @@
           <div class="large-6 columns">
                 <br>
                 <p><strong>Onde Estamos</strong></p>
+                <p>PRAÇA SÃO JOÃO BERCHMANS 45 SALA 206- PARADA DE LUCAS – CEP: 21230-570</p>
                 <iframe width="100%" height="300" frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed/v1/place?q=Pra%C3%A7a%20S%C3
                 %A3o%20Jo%C3%A3o%20Berchmarns%20-%20Cordovil%2C%20Rio%20de%20Janeiro

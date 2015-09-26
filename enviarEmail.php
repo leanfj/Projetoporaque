@@ -15,7 +15,7 @@ require 'phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer();
 $mail->setLanguage('pt');
 
-$to = 'poraque@poraqueinstalacoes.com.br, a.silva@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br';
+$to = 'poraque@poraqueinstalacoes.com.br, j.alberto@poraqueinstalacoes.com.br, i.cristina@poraqueinstalacoes.com.br, j.ricardo@poraqueinstalacoes.com.br';
 
 $host = 'smtp.poraqueinstalacoes.com.br';
 $username = 'caixa@poraqueinstalacoes.com.br';
@@ -41,7 +41,7 @@ $mail->FromName = $fromName;
 $mail->addReplyTo($email, $nomeRemetente);
 
 $mail->addAddress('poraque@poraqueinstalacoes.com.br','Poraque');
-$mail->addAddress('a.silva@poraqueinstalacoes.com.br','Alberto');
+$mail->addAddress('j.alberto@poraqueinstalacoes.com.br','Alberto');
 $mail->addAddress('i.cristina@poraqueinstalacoes.com.br','Isabel');
 $mail->addAddress('j.ricardo@poraqueinstalacoes.com.br','Ricardo');
 
